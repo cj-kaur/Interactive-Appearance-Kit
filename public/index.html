@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css reset  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <!-- external css -->
+    <link rel="stylesheet" href="/assests/style.css">
+    <!-- imported fonts  -->
+    <link rel="stylesheet" href="https://use.typekit.net/fzz1ukk.css">
+    <!-- Page title -->
+    <title>Interactive Appearance Kit</title>
+</head>
+
+<body id="page-layout">
+    <section class="img-container">
+        <figure class="main-img">
+            <img src="https://images.unsplash.com/photo-1489363855452-7327672b1608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="portrait picture of a road with mounatins in background">
+        </figure>
+    </section>
+    <main>
+        <article class="sidebar">
+            <h1>
+                Interactive Appearance Kit
+            </h1>
+            <ul class="parameters">
+                <li class="bg-para">
+                    <label for="bg-color">Background Color</label>
+                    <input type="color" id="bg-color" value="#9fbdd7" name="base">
+                </li>
+                <li class="blur-para">
+                    <label for="blur-range">Blur</label>
+                    <input type="range" id="blur-range" value="5" min="0" max="50" step="5" name="blur"
+                        data-suffix="px">
+                </li>
+                <li class="sizing-para">
+                    <label for="sizing-range">Sizing</label>
+                    <input type="range" id="sizing-range" min="40" max="150" value="65" step="10" name="spacing"
+                        data-suffix="%">
+                </li>
+            </ul>
+        </article>
+        <footer>
+            <p>
+                Credits: Javascript30
+            </p>
+            <p>
+                Author: Chiranjivi
+            </p>
+        </footer>
+    </main>
+
+    <!-- main js link -->
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>
